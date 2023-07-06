@@ -7,7 +7,7 @@ on:
       - 'LICENSE'
       - 'README*'
       - 'CODE_OF_CONDUCT*'
-    branches: [main, 2.0, 1.x]
+    branches: [main]
   pull_request:
     paths-ignore:
       - '.github/**'
@@ -15,13 +15,13 @@ on:
       - 'LICENSE'
       - 'README*'
       - 'CODE_OF_CONDUCT*'
-    branches: [main, 2.0, 1.x]
+    branches: [main]
 
 jobs:
   build-verify:
     name: Verify Build
     runs-on: ubuntu-latest
-    if: github.repository_owner == 'Apicurio'
+    if: github.repository_owner == 'djai-app'
     steps:
       - uses: actions/setup-java@v3
         with:
