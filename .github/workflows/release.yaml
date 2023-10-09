@@ -91,12 +91,7 @@ jobs:
           echo "#### Listing files after clone ####"
           find .
 
-      
-      # To avoid permission denied issues 
-      - name: Give full Permissions
-        run: chmod -R 777 $(pwd)
 
-        
       - name: Update Release Version ${{ github.event.inputs.release-version}}
         run: mvn versions:set -DnewVersion=${{ github.event.inputs.release-version}} -DgenerateBackupPoms=false -DprocessAllModules=true
 
@@ -119,10 +114,10 @@ jobs:
 
 
       - name: Import GPG Key
-        uses: crazy-max/ghaction-import-gpg@v1
-        env:
-          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
-          PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+        uses: crazy-max/ghaction-import-gpg@v5
+        with:
+          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.GPG_PASSPHRASE }}
           
 
       - name: Create GitHub Release

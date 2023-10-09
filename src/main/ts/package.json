@@ -18,19 +18,19 @@
     "package": "rimraf dist && tsc -p tsconfig-package.json && cpx package.json dist && cpx module/*.* dist && mkdirp ./dist/bundles && webpack"
   },
   "dependencies": {
-    "core-js": "3.31.1"
+    "core-js": "3.33.0"
   },
   "devDependencies": {
-    "@types/filesystem": "0.0.32",
-    "@types/jest": "29.5.2",
+    "@types/filesystem": "0.0.33",
+    "@types/jest": "29.5.5",
     "cpx": "1.5.0",
     "diff": "5.1.0",
-    "jest": "29.6.1",
+    "jest": "29.7.0",
     "mkdirp": "1.0.4",
-    "rimraf": "5.0.1",
+    "rimraf": "5.0.5",
     "ts-jest": "29.1.1",
-    "typescript": "5.1.6",
-    "webpack": "5.88.1",
+    "typescript": "5.2.2",
+    "webpack": "5.88.2",
     "webpack-cli": "5.1.4"
   }
 }
