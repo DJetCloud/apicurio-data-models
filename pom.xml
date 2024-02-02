@@ -64,8 +64,8 @@
         <!-- Dependency Versions -->
         <version.com.fasterxml.jackson>2.12.5</version.com.fasterxml.jackson>
         <version.com.fasterxml.jackson.dataformat>2.10.0.pr1</version.com.fasterxml.jackson.dataformat>
-        <version.commons-lang3>3.13.0</version.commons-lang3>
-        <version.commons-io>2.14.0</version.commons-io>
+        <version.commons-lang3>3.14.0</version.commons-lang3>
+        <version.commons-io>2.15.1</version.commons-io>
         <version.junit>4.13.2</version.junit>
         <version.org.jsweet-core>6.3.0</version.org.jsweet-core>
         <version.org.jsweet-transpiler>3.1.0</version.org.jsweet-transpiler>
@@ -74,13 +74,13 @@
         <!-- Plugin Versions -->
         <version.org.eclipse.m2e.lifecycle-mapping>1.0.0</version.org.eclipse.m2e.lifecycle-mapping>
         <version.org.apache.felix.maven-bundle-plugin>5.1.9</version.org.apache.felix.maven-bundle-plugin>
-        <version.maven-compiler-plugin>3.11.0</version.maven-compiler-plugin>
+        <version.maven-compiler-plugin>3.12.1</version.maven-compiler-plugin>
         <version.maven-source-plugin>3.3.0</version.maven-source-plugin>
-        <version.maven-javadoc-plugin>3.6.0</version.maven-javadoc-plugin>
+        <version.maven-javadoc-plugin>3.6.3</version.maven-javadoc-plugin>
         <version.maven-resources-plugin>3.3.1</version.maven-resources-plugin>
         <version.maven-gpg-plugin>3.1.0</version.maven-gpg-plugin>
-        <version.org.codehaus.mojo.exec-maven-plugin>3.1.0</version.org.codehaus.mojo.exec-maven-plugin>
-        <version.com.github.eirslett.frontend-maven-plugin>1.13.4</version.com.github.eirslett.frontend-maven-plugin>
+        <version.org.codehaus.mojo.exec-maven-plugin>3.1.1</version.org.codehaus.mojo.exec-maven-plugin>
+        <version.com.github.eirslett.frontend-maven-plugin>1.15.0</version.com.github.eirslett.frontend-maven-plugin>
         <version.org.sonatype.plugins.nexus-staging-maven-plugin>1.6.13</version.org.sonatype.plugins.nexus-staging-maven-plugin>
         <version.apicurio-unified-model-generator-plugin>1.0.14.Final</version.apicurio-unified-model-generator-plugin>
         <version.jsweet-maven-plugin>3.1.1.RedHat</version.jsweet-maven-plugin>
@@ -272,7 +272,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>build-helper-maven-plugin</artifactId>
-                <version>3.4.0</version>
+                <version>3.5.0</version>
                 <executions>
                     <execution>
                         <id>add-sources</id>
